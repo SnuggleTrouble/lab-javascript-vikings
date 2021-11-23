@@ -78,6 +78,7 @@ class War {
     }
   };
   saxonAttack() {
+    // I can't figure out why this doesn't work with the test. What am I missing?
     const randomVikingSoldier = this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)];
     const randomSaxonSoldier = this.saxonArmy[Math.floor(Math.random() * this.saxonArmy.length)];
 
@@ -97,6 +98,9 @@ class War {
     }
   };
 };
+
+const war = new War();
+console.log(war.saxonArmy);
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
